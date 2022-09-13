@@ -1,0 +1,10 @@
+import blpapi
+from xbbg import blp
+import pandas as pd
+import numpy as np
+
+df = blp.bdh(
+tickers='SPX Index', flds=['High', 'Low','Open','px_last'],
+start_date='2012-09-13', end_date='2022-09-13',
+)
+df
